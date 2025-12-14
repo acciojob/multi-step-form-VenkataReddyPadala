@@ -29,7 +29,9 @@ function Step({ step, setStep }) {
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
-          <button onClick={() => setStep((cur) => cur + 1)}>Next</button>
+          <button type="button" onClick={() => setStep((cur) => cur + 1)}>
+            Next
+          </button>
         </div>
       )}
       {step === 1 && (
@@ -49,8 +51,12 @@ function Step({ step, setStep }) {
             value={carPrice}
             onChange={(e) => setCarPrice(e.target.value)}
           />
-          <button onClick={() => setStep((cur) => cur - 1)}>Previous</button>
-          <button onClick={() => setStep((cur) => cur + 1)}>Next</button>
+          <button type="button" onClick={() => setStep((cur) => cur - 1)}>
+            Previous
+          </button>
+          <button type="button" onClick={() => setStep((cur) => cur + 1)}>
+            Next
+          </button>
         </div>
       )}
       {step === 2 && (
@@ -96,7 +102,9 @@ function Step({ step, setStep }) {
           >
             Expiration Date must be in the format of MM/YY
           </p>
-          <button onClick={() => setStep((cur) => cur - 1)}>Previous</button>
+          <button type="button" onClick={() => setStep((cur) => cur - 1)}>
+            Previous
+          </button>
           <button
             type="submit"
             onClick={() => {
