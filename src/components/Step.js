@@ -22,14 +22,14 @@ function Step({ step, setStep }) {
           <label htmlFor="first_name">First Name:</label>
           <input
             type="text"
-            id="first_Name"
+            id="first_name"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
           <label htmlFor="last_name">Last Name:</label>
           <input
             type="text"
-            id="last_Name"
+            id="last_name"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
