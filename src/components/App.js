@@ -3,7 +3,7 @@ import "./../styles/App.css";
 import Step from "./Step";
 
 const App = () => {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
   return (
     <div>
       {/* Do not remove the main div */}

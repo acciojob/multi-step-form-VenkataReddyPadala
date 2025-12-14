@@ -12,8 +12,8 @@ function Step({ step, setStep }) {
 
   return (
     <div>
-      {step === 0 && (
-        <div id="step1">
+      {step === 1 && (
+        <div id={`step${step}`}>
           <h1>Customer Details</h1>
           <label htmlFor="first_name">First Name:</label>
           <input
@@ -34,8 +34,8 @@ function Step({ step, setStep }) {
           </button>
         </div>
       )}
-      {step === 1 && (
-        <div id="step2">
+      {step === 2 && (
+        <div id={`step${step}`}>
           <h1>Car Details</h1>
           <label htmlFor="model">Model:</label>
           <input
@@ -59,8 +59,8 @@ function Step({ step, setStep }) {
           </button>
         </div>
       )}
-      {step === 2 && (
-        <div id="step3">
+      {step === 3 && (
+        <div id={`step${step}`}>
           <h1>Payment Details</h1>
           <label htmlFor="card_info">Credit cart Number:</label>
           <input
@@ -108,7 +108,7 @@ function Step({ step, setStep }) {
           <button
             // type="submit"
             onClick={() => {
-              setStep(0);
+              setStep(1);
               setCarPrice("");
               setCredNum("");
               setExpDate("");
