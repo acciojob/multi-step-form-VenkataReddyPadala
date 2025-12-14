@@ -17,7 +17,7 @@ function Step({ step, setStep }) {
   return (
     <div>
       {step === 0 && (
-        <div>
+        <div id="step1">
           <h1>Customer Details</h1>
           <label htmlFor="first_name">First Name:</label>
           <input
@@ -37,7 +37,7 @@ function Step({ step, setStep }) {
         </div>
       )}
       {step === 1 && (
-        <div>
+        <div id="step2">
           <h1>Car Details</h1>
           <label htmlFor="model">Model:</label>
           <input
@@ -58,7 +58,7 @@ function Step({ step, setStep }) {
         </div>
       )}
       {step === 2 && (
-        <div>
+        <div id="step3">
           <h1>Payment Details</h1>
           <label htmlFor="card_info">Credit cart Number:</label>
           <input
