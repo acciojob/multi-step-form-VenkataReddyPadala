@@ -7,9 +7,9 @@ const App = () => {
   return (
     <div>
       {/* Do not remove the main div */}
-      <form onSubmit={(e) => e.preventDefault()}>
-        <Step setStep={setStep} step={step} />
-      </form>
+      {/* <form onSubmit={(e) => e.preventDefault()}> */}
+      <Step setStep={setStep} step={step} />
+      {/* </form> */}
     </div>
   );
 };

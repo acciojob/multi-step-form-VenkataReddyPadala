@@ -106,7 +106,7 @@ function Step({ step, setStep }) {
             Previous
           </button>
           <button
-            type="submit"
+            // type="submit"
             onClick={() => {
               setStep(0);
               setCarPrice("");
