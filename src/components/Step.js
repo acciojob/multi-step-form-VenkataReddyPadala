@@ -9,11 +9,7 @@ function Step({ step, setStep }) {
   const [expDate, setExpDate] = useState("");
   const [cardErr, setCardErr] = useState(false);
   const [expDateErr, setExpDateErr] = useState(false);
-  function handleNext(first, second) {
-    if (first.trim() !== "" && second.trim() !== "") {
-      setStep((cur) => cur + 1);
-    }
-  }
+
   return (
     <div>
       {step === 0 && (
@@ -33,7 +29,7 @@ function Step({ step, setStep }) {
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
-          <button onClick={() => handleNext(firstName, lastName)}>Next</button>
+          <button onClick={() => setStep((cur) => cur + 1)}>Next</button>
         </div>
       )}
       {step === 1 && (
