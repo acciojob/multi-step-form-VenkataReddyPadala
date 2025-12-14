@@ -50,7 +50,7 @@ function Step({ step, setStep }) {
             onChange={(e) => setCarPrice(e.target.value)}
           />
           <button onClick={() => setStep((cur) => cur - 1)}>Previous</button>
-          <button onClick={() => handleNext(firstName, lastName)}>Next</button>
+          <button onClick={() => setStep((cur) => cur + 1)}>Next</button>
         </div>
       )}
       {step === 2 && (
