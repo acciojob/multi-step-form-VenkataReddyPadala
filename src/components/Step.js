@@ -12,7 +12,7 @@ function Step({ step, setStep }) {
 
   return (
     <>
-      <div id={`step${step}`}>
+      <div id={`step1`}>
         {step === 1 && (
           <>
             <h1>Customer Details</h1>
@@ -36,7 +36,7 @@ function Step({ step, setStep }) {
           </>
         )}
       </div>
-      <div id={`step${step}`}>
+      <div id={`step2`}>
         {step === 2 && (
           <>
             <h1>Car Details</h1>
@@ -63,7 +63,7 @@ function Step({ step, setStep }) {
           </>
         )}
       </div>
-      <div id={`step${step}`}>
+      <div id={`step3`}>
         {step === 3 && (
           <>
             <h1>Payment Details</h1>

@@ -4,6 +4,7 @@ import Step from "./Step";
 
 const App = () => {
   const [step, setStep] = useState(1);
+
   return (
     <div>
       {/* Do not remove the main div */}
